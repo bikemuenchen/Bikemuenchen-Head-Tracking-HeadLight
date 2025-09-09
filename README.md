@@ -47,12 +47,9 @@ Project: **Bikemuenchen-Head-Tracking-HeadLight**
 
 ---
 
-## 📐 Connection Diagram
-👉 *(Insert your wiring diagram image here)*  
-
-Example placeholder:
-
-
+## 📐 Demo Video
+- [Youtube](https://www.youtube.com/shorts/tne_76oB_q0)
+- [Instagram](https://www.instagram.com/reel/DOG8mxtjeJE/?igsh=ZHh2eHZ5Znh1OGZ4)  
 ---
 
 ## 📦 Dependencies
