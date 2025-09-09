@@ -1,3 +1,48 @@
+/*
+  ==============================================================================
+   Project       : ESP8266 Head Tracking with MPU6050 + Pan-Tilt Servos
+   Version       : 1.0
+   Board         : ESP8266 (NodeMCU / Wemos D1 Mini)
+   File          : ESP8266_Receive_code.ino
+   Author        : [bikemuenchen] (https://github.com/bikemuenchen)
+   Created On    : [02-09-2025]
+   Description   : Receives Yaw & Pitch data via ESP-NOW from sender ESP8266 
+                   and maps it to two servo motors for pan/tilt movement.
+   Comment       : - Pan servo attached on GPIO4 (D2)
+                   - Tilt servo attached on GPIO5 (D1)
+                   - Debugging available with DEBUG flag
+
+   Status        : Working (tested with ESP8266 + SG90/MG90S servos)
+
+   Purpose       :
+     This firmware receives head tracking data from the sender module and drives
+     two servos in a pan/tilt arrangement to replicate the MPU6050 orientation.
+
+   Features:
+     - ESP-NOW data reception
+     - Mapping of yaw/pitch values to servo angles
+     - Servo reset to neutral position at startup
+     - Debugging support over Serial Monitor (baud: 115200)
+
+   Supported Boards:
+     - ESP8266 NodeMCU v1.0
+     - Wemos D1 Mini
+
+   Pin Usage (Receiver):
+     - Pan Servo -> GPIO4 (D2)
+     - Tilt Servo -> GPIO5 (D1)
+     - External 5V power supply for servos required (shared GND)
+
+   Dependencies:
+     - ESP8266WiFi
+     - espnow
+     - Servo
+
+  ------------------------------------------------------------------------------
+  ==============================================================================
+*/
+
+
 #include <ESP8266WiFi.h>
 #include <espnow.h>
 #include <Servo.h>
