@@ -47,11 +47,6 @@ Project: **Bikemuenchen-Head-Tracking-HeadLight**
 
 ---
 
-## 📐 Demo Video
-- [Youtube](https://www.youtube.com/shorts/tne_76oB_q0)
-- [Instagram](https://www.instagram.com/reel/DOG8mxtjeJE/?igsh=ZHh2eHZ5Znh1OGZ4)  
----
-
 ## 📦 Dependencies
 
 Please install the following Arduino libraries:
@@ -83,6 +78,12 @@ Make sure the **ESP8266 board package** is installed in Arduino IDE via Boards M
 4. **Test**  
    - Power both boards.  
    - Move the MPU6050 → pan/tilt servos should follow.  
+
+---
+
+## 📐 Demo Video
+- [Youtube](https://www.youtube.com/shorts/tne_76oB_q0)
+- [Instagram](https://www.instagram.com/reel/DOG8mxtjeJE/?igsh=ZHh2eHZ5Znh1OGZ4)
 
 ---
 
