@@ -87,6 +87,18 @@ Make sure the **ESP8266 board package** is installed in Arduino IDE via Boards M
 
 ---
 
+## Project Photos
+### **ESP8266 Sender Front** 
+
+![Sender_front](photos/Sender_front.jpg)
+
+### **ESP8266 Sender Front** 
+![Sender_back](photos/Sender_back.jpg)
+
+### **ESP8266_Receive**
+
+![Reciver](photos/Receiver_p1.jpg)
+
 ## 🛡️ License
 MIT License © 2025 [bikemuenchen](https://github.com/bikemuenchen)  
 
