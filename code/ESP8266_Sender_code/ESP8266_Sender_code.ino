@@ -1,3 +1,50 @@
+/*
+  ==============================================================================
+   Project       : ESP8266 Head Tracking with MPU6050 + Pan-Tilt Servos
+   Version       : 1.0
+   Board         : ESP8266 (NodeMCU / Wemos D1 Mini)
+   File          : ESP8266_Sender_code.ino
+   Author        : [bikemuenchen] (https://github.com/bikemuenchen)
+   Created On    : [02-09-2025]
+   Description   : Reads Yaw & Pitch from MPU6050 via DMP and transmits data 
+                   wirelessly using ESP-NOW to the receiver ESP8266 board.
+   Comment       : - Requires MPU6050 connected via I2C
+                   - Send target MAC address must be updated in code
+                   - Debugging available with DEBUG flag
+
+   Status        : Working (tested with MPU6050 + ESP8266 + ESP-NOW)
+
+   Purpose       :
+     This firmware is designed to capture head movement data (Yaw, Pitch) using
+     the MPU6050 IMU, and transmit it in real time via ESP-NOW to a receiver
+     module that controls pan/tilt servos.
+
+   Features:
+     - MPU6050 Digital Motion Processor (DMP) enabled
+     - Yaw & Pitch calculation with Quaternion & Gravity vector
+     - ESP-NOW wireless communication
+     - Debugging support over Serial Monitor (baud: 115200)
+
+   Supported Boards:
+     - ESP8266 NodeMCU v1.0
+     - Wemos D1 Mini
+
+   Pin Usage (Sender):
+     - MPU6050 SDA -> D2 (GPIO4)
+     - MPU6050 SCL -> D1 (GPIO5)
+     - MPU6050 INT -> D7 (GPIO13)
+
+   Dependencies:
+     - ESP8266WiFi
+     - espnow
+     - Wire
+     - I2Cdevlib MPU6050
+
+  ------------------------------------------------------------------------------
+  ==============================================================================
+*/
+
+
 #include <Wire.h>
 #include "MPU6050_6Axis_MotionApps20.h"
 #include <ESP8266WiFi.h>
