@@ -5,7 +5,7 @@
 Servo panServo, tiltServo;
 #define SERVO_PIN_X 4  // panServo
 #define SERVO_PIN_Y 5  // tiltServo
-#define DEBUG 1
+#define DEBUG 0 // Debugging flag 1= ON, 0 = OFF
 
 volatile bool newDataAvailable = false;
 // Structure to receive servo angles
@@ -18,8 +18,8 @@ Data_Packet myData;
 
 void servoReset()
 {
-  panServo.write(20);
-  tiltServo.write(90);
+  panServo.write(20); // Initial position for panServo
+  tiltServo.write(90); // Initial position for tiltServo
 }
 
 // Callback function for received data
