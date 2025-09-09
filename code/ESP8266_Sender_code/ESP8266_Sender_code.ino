@@ -3,12 +3,10 @@
 #include <ESP8266WiFi.h>
 #include <espnow.h>
 
-#define DEBUG 0
+#define DEBUG 0 // Debugging flag 1= ON, 0 = OFF
 
 //uint8_t broadcastAddress[] = {0x2C, 0xF4, 0x32, 0x75, 0x40, 0x72}; // Replace with receiver MAC//
-//{0xB4, 0xE6, 0x2D, 0x37, 0x42, 0x14};
-uint8_t broadcastAddress[] = {0x3C, 0x61, 0x05, 0xEE, 0xC5, 0x2A};
-//3C:61:05:EE:C5:2A
+uint8_t broadcastAddress[] = {0x3C, 0x61, 0x05, 0xEE, 0xC5, 0x2A}; // run ESP_Get_MAC.ino program and open Serial Monitor on receiver ESP8266 to get MAC address
 
 
 typedef struct Data_Package  {
@@ -19,10 +17,9 @@ typedef struct Data_Package  {
 Data_Package  mpuData;
 
 
-
 /* --- MPU6050 Setup --- */
 MPU6050 mpu;
-#define INTERRUPT_PIN 13
+#define INTERRUPT_PIN 13 // D7 on NodeMCU
 bool blinkState;
 bool dmpReady = false;
 uint8_t mpuIntStatus;
