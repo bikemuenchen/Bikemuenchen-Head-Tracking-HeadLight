@@ -59,8 +59,6 @@ Example placeholder:
 
 Please install the following Arduino libraries:
 
-- [ESP8266WiFi](https://arduino-esp8266.readthedocs.io/) (comes with ESP8266 core)  
-- [espnow](https://arduino-esp8266.readthedocs.io/en/latest/espnow.html) (comes with ESP8266 core)  
 - [Servo](https://github.com/arduino-libraries/Servo)  
 - [I2Cdevlib MPU6050](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)  
 
